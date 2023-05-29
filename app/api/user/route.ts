@@ -9,16 +9,23 @@ export async function GET(req: NextRequest, res: NextResponse)
 
     const decode_token = jwt.decode(token?.split(" ")[ 1 ] as string);
 
-    try {
-        const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_SERVER}/user/${decode_token?.sub}`);
 
+
+    try {
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_SERVER}/user/${decode_token?.sub}`, {
+            headers: {
+                Authorization: token
+            }
+        });
+
+        console.log("res", response);
         return NextResponse.json({
             user: response.data.user
         });
 
 
-    } catch (error) {
-
+    } catch (error: any) {
+        console.log(error);
         return NextResponse.json({
             message: "Something went wrong"
         });

@@ -26,7 +26,7 @@ export async function middleware(request: NextRequest, response: NextResponse)
         }
     }
 
-    request.headers.set("Authorization", `${token}`);
+
 
     return NextResponse.next();
 }

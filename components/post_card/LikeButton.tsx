@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
+import { Like } from "@/lib/types";
 
-const LikeButton = ({ likes }: { likes: number }) => {
+const LikeButton = ({ likes }: { likes: Like[] }) => {
     const [like, setLike] = useState(likes);
     const [isLiked, setIsLiked] = useState(false);
 
@@ -16,7 +17,7 @@ const LikeButton = ({ likes }: { likes: number }) => {
                 {isLiked ? <AiFillHeart /> : <AiOutlineHeart />}
             </div>
             <span className="px-[8px] pointer-events-none rounded-[36px]  bg-primary text-secondary-white font-[500]  text-[12px]">
-                {like}
+                {like.length}
             </span>
         </div>
     );

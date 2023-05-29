@@ -67,33 +67,51 @@ export const dashboardMenus = [
 export const dummyPosts: Post[] = [
     {
         user: {
-            firstName: "Jane",
-            lastName: "Doe",
-            profilePicture: "https://dummyimage.com/100x100/000/fff",
+            first_name: "Jane",
+            last_name: "Doe",
+            profile_image: "https://dummyimage.com/100x100/000/fff",
         },
         content:
             "Just finished an amazing hike in the mountains. The views were breathtaking and the fresh air was invigorating!",
         media: [ "https://dummyimage.com/500x500/111/fff" ],
 
-        likes: 25,
+        likes: [ {
+            first_name: "Jane",
+            last_name: "Doe",
+            profile_image: "https://dummyimage.com/100x100/000/fff",
+        },
+        {
+            first_name: "Jane",
+            last_name: "Doe",
+            profile_image: "https://dummyimage.com/100x100/000/fff",
+        }
+        ],
         comments: [
             {
-                username: "John Smith",
-                comment:
+                user: {
+                    first_name: "Jane",
+                    last_name: "Doe",
+                    profile_image: "https://dummyimage.com/100x100/000/fff",
+                },
+                content:
                     "Looks like an incredible hike! I'll have to check it out sometime.",
             },
             {
-                username: "Sara Jones",
-                comment:
+                user: {
+                    first_name: "Jane",
+                    last_name: "Doe",
+                    profile_image: "https://dummyimage.com/100x100/000/fff",
+                },
+                content:
                     "Wow, those photos are stunning! I wish I could have been there with you.",
             },
         ],
     },
     {
         user: {
-            firstName: "John",
-            lastName: "Smith",
-            profilePicture: "https://dummyimage.com/100x100/000/fff",
+            first_name: "John",
+            last_name: "Smith",
+            profile_image: "https://dummyimage.com/100x100/000/fff",
         },
         content:
             "Just finished an amazing hike in the mountains. The views were breathtaking and the fresh air was invigorating!",
@@ -103,18 +121,32 @@ export const dummyPosts: Post[] = [
         ],
         comments: [
             {
-                username: "John Smith",
+                user: {
+                    first_name: "John",
+                    last_name: "Smith",
+                    profile_image: "https://dummyimage.com/100x100/000/fff",
+                },
                 comment:
                     "Looks like an incredible hike! I'll have to check it out sometime.",
             },
         ],
-        likes: 25,
+        likes: [ {
+            first_name: "Jane",
+            last_name: "Doe",
+            profile_image: "https://dummyimage.com/100x100/000/fff",
+        },
+        {
+            first_name: "Jane",
+            last_name: "Doe",
+            profile_image: "https://dummyimage.com/100x100/000/fff",
+        }
+        ],
     },
     {
         user: {
-            firstName: "Jane",
-            lastName: "Doe",
-            profilePicture: "https://dummyimage.com/100x100/000/fff",
+            first_name: "Jane",
+            last_name: "Doe",
+            profile_image: "https://dummyimage.com/100x100/000/fff",
         },
         content:
             "Just finished an amazing hike in the mountains. The views were breathtaking and the fresh air was invigorating!",
@@ -128,54 +160,53 @@ export const dummyPosts: Post[] = [
         ],
         comments: [
             {
-                username: "John Smith",
+                user: {
+                    first_name: "Jane",
+                    last_name: "Doe",
+                    profile_image: "https://dummyimage.com/100x100/000/fff",
+                },
                 comment:
                     "Looks like an incredible hike! I'll have to check it out sometime.",
             },
         ],
-        likes: 25,
+        likes: [ {
+            first_name: "Jane",
+            last_name: "Doe",
+            profile_image: "https://dummyimage.com/100x100/000/fff",
+        },
+        {
+            first_name: "Jane",
+            last_name: "Doe",
+            profile_image: "https://dummyimage.com/100x100/000/fff",
+        }
+        ],
     },
 ];
 
 export const dummyFriendSuggestion = [
     {
-        name: "green_thumbs",
-        profilePicture: "https://dummyimage.com/100x100/4caf50/ffffff",
-        accountType: "farmer",
+        first_name: "Jane",
+        last_name: "Doe",
+        profile_image: "https://dummyimage.com/100x100/000/fff",
     },
     {
-        name: "foodie4life",
-        profilePicture: "https://dummyimage.com/100x100/ff9800/ffffff",
-        accountType: "buyer",
+        first_name: "Jane",
+        last_name: "Doe",
+        profile_image: "https://dummyimage.com/100x100/000/fff",
     },
     {
-        name: "organicfan",
-        profilePicture: "https://dummyimage.com/100x100/9c27b0/ffffff",
-        accountType: "buyer",
+        first_name: "Jane",
+        last_name: "Doe",
+        profile_image: "https://dummyimage.com/100x100/000/fff",
     },
     {
-        name: "harvest_king",
-        profilePicture: "https://dummyimage.com/100x100/f44336/ffffff",
-        accountType: "farmer",
+        first_name: "Jane",
+        last_name: "Doe",
+        profile_image: "https://dummyimage.com/100x100/000/fff",
     },
     {
-        name: "market_maven",
-        profilePicture: "https://dummyimage.com/100x100/2196f3/ffffff",
-        accountType: "seller",
-    },
-    {
-        name: "veggie_vibes",
-        profilePicture: "https://dummyimage.com/100x100/009688/ffffff",
-        accountType: "buyer",
-    },
-    {
-        name: "fresh_farms",
-        profilePicture: "https://dummyimage.com/100x100/8bc34a/ffffff",
-        accountType: "seller",
-    },
-    {
-        name: "healthy_harvest",
-        profilePicture: "https://dummyimage.com/100x100/ffeb3b/000000",
-        accountType: "farmer",
-    },
+        first_name: "Jane",
+        last_name: "Doe",
+        profile_image: "https://dummyimage.com/100x100/000/fff",
+    }
 ];

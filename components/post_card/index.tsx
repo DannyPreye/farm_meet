@@ -29,13 +29,13 @@ const PostCard: FC<PostCardProps> = ({ post }) => {
             <div className="flex justify-between items-center ">
                 <div
                     className="flex gap-3"
-                    title={`${post.user.firstName} ${post.user.lastName}`}
+                    title={`${post.user.first_name} ${post.user.last_name}`}
                 >
                     <Link href={"/"}>
                         <div className="w-[46px] h-[46px] relative overflow-hidden rounded-full bg-secondary-white">
                             <Image
-                                src={post.user.profilePicture}
-                                alt={post.user.firstName}
+                                src={post.user.profile_image}
+                                alt={post.user.first_name}
                                 fill
                             />
                         </div>
@@ -44,7 +44,7 @@ const PostCard: FC<PostCardProps> = ({ post }) => {
                     <div className="flex flex-col ">
                         <p className="font-bold text-[16px] text-primary-grey">
                             <span>
-                                {post.user.firstName} {post.user.lastName}
+                                {post.user.first_name} {post.user.last_name}
                             </span>
                         </p>
                         <span className="text-[#b6b1b1] text-[12px]">
@@ -87,8 +87,8 @@ const PostCard: FC<PostCardProps> = ({ post }) => {
                     <form className="flex gap-3 w-full">
                         <div className="w-9 h-9 rounded-full relative overflow-hidden">
                             <Image
-                                src={post.user.profilePicture}
-                                alt={post.user.firstName}
+                                src={post.user.profile_image}
+                                alt={post.user.first_name}
                                 fill
                             />
                         </div>
